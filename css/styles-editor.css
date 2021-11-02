@@ -1,0 +1,31 @@
+@import url('styles.css');
+html {
+    min-width: 0px !important; min-height: 0 !important; height: auto !important; margin: 0;
+    padding: 20px !important; background: none;
+}
+body {
+    min-width: 0px !important; min-height: 0 !important; height: auto !important; background: none; padding: 0;
+    color: #777; background-color: #fff; -webkit-font-smoothing: antialiased !important; font-weight: normal !important;
+    zoom: 1 !important;
+}
+.content { overflow: visible; }
+p { overflow: visible; }
+ul:not(:last-child) { margin-bottom: 1em; }
+h2 { margin: -0.3em 0 0.5em 0; color: #77C62C; }
+h3{ margin: 0 0 0.25em 0; color: #777777; }
+h4 { margin: 0 0 0.25em 0; color: #777777; }
+p+h2, ul+h2, ol+h2, div+h2, blockquote+h2, table+h2 { margin-top: 1.5em; }
+p+h3, ul+h3, ol+h3, div+h3, blockquote+h3, table+h3 { margin-top: 1em; }
+p+h4, ul+h4, ol+h4, div+h4, blockquote+h4, table+h4 { margin-top: 1em; }
+
+blockquote {  position: relative; margin: 0 0 1em 0; font-size: 1.2rem; line-height: 1.4; color: #77C62C; padding: 1rem 1rem 1rem 4rem; border: 2px dashed #e0e0e0; -moz-border-radius: 0.5rem; -webkit-border-radius: 0.5rem; border-radius: 0.5rem;  }
+blockquote:before { content: ''; display: block; position: absolute; top: 1rem; left: 1rem; width: 36px;  height: 36px; color: #fff; border-radius: 50%;  display: inline-block; vertical-align: middle; text-align: center; background: #77C62C url('../_img/icon-quote.svg') center center no-repeat; }
+blockquote i, blockquote em { color: #b0b0b0; font-style: normal; }
+
+.content > table { width: 100%; }
+.content > table thead td { background-color: #77C62C !important; color: #fff; border-bottom: 0; }
+.content > table thead tr:first-child td:first-child { border-top-left-radius: 0.5rem;  -webkit-border-top-left-radius: 0.5rem; }
+.content > table thead tr:first-child td:last-child { border-top-right-radius: 0.5rem;  -webkit-border-top-right-radius: 0.5rem; }
+.content > table td { padding: 5px 10px; border-bottom: 1px solid #e0e0e0; background-color: transparent; }
+.content > table td:not(:last-child) { border-right: 1px solid #e0e0e0; }
+.content > table tr:hover td { background-color: #f8f8f8; }

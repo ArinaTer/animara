@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/animations.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/hover-min.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/schedule.css">
+    <link rel="stylesheet" href="css/styles-common.css">
+    <link rel="stylesheet" href="css/styles-editor.css">
+    <link rel="stylesheet" href="css/styles-hangmassive.css">
+    <link rel="stylesheet" href="css/styles-mobile.css">
+    <link rel="stylesheet" href="css/styles-wp.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <title>animara</title>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="section">
+            <button id="myBtn">Кнопка</button>
+            <span class="close">&times;</span>
+            <div class="form-filling center" id="myModal">
+                <div class="form-filling-item col-md-6 offset-md-4">
+                    <h3 class="section__title white-color col-sm-8">Оставьте контакты.</h3>
+                    <h3 class="section__title white-color col-sm-8">Мы узнаем возможна ли покупка этого
+                        инструмента у хозяина
+                        и
+                        <span class="color__item">свяжемся с вами</span>
+                    </h3>
+                </div>
+                <p class="white-color">Для этого нужео:</p>
+                <div class="form-item">
+                    <div class="form__name col-md-2 offset-md-5">
+                        <input type="text" placeholder="Имя" class="form__name-tel ">
+                    </div>
+                    <div class="form__phone col-md-2 offset-md-5">
+                        <input type="tel" placeholder="Телефон" class="form__name-tel">
+                    </div>
+                    <div class="center">
+                        <button class="col-md-2 ">отправить</button>
+                    </div>
+                    <p class="fs-small col-md-2 offset-md-5">нажимая на кнопку,я соглашаюсь на обработку
+                        <a><u>персональных данных
+                                и с
+                                правилами пользователя
+                                Платформы</u></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+         var modal = document.getElementById("myModal");
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
